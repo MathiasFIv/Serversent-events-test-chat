@@ -1,0 +1,29 @@
+﻿# ---- .NET / Visual Studio / Rider ----
+**/bin/
+**/obj/
+**/.vs/
+**/.idea/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# ASP.NET static web assets artifacts
+**/wwwroot/lib/
+
+# ---- Node / Vite / React ----
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/*.local
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Secrets ----
+**/appsettings.*.json.user
+
+# ---- Misc ----
+*.log
+
