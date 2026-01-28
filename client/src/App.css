@@ -85,8 +85,31 @@
   border: 1px solid #ddd;
   border-radius: 12px;
   padding: 12px;
-  overflow: auto;
+  overflow: hidden;
   background: white;
+
+  /* Make the chat window a vertical layout:
+     - messages scroll inside
+     - typing indicator stays pinned at the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-scroll {
+  flex: 1;
+  overflow: auto;
+  min-height: 0; /* important so flex children can actually scroll */
+}
+
+.typing-indicator {
+  flex: 0 0 auto;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(238, 238, 238, 0.95);
+  color: #444;
+  font-size: 12px;
+  display: inline-block;
 }
 
 .message {
